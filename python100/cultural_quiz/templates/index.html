@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cultural Quiz</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Welcome to the Cultural Quiz!</h1>
+    <br />
+    <h2>
+      Are you ready to test your skills and see how much you know about the
+      diverse world we live in? <br />Let's check it out! <br />
+    </h2>
+    <br />
+    <form action="{{ url_for('quiz') }}" method="post">
+      <button type="submit">START QUIZ</button>
+    </form>
+  </body>
+</html>

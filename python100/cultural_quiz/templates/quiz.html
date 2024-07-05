@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cultural Quiz</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Answer the Questions</h1>
+    <form action="{{ url_for('result') }}" method="post">
+      {% for i in range(questions|length) %}
+      <div>
+        <p>{{ questions[i].question }}</p>
+        {% for option in questions[i].options %} <input type="radio"
+        name="question-{{ i }}" value="{{ option }} id="radiobuttons" /> {{
+        option }}<br />
+        {% endfor %}
+      </div>
+      {% endfor %}
+      <button type="submit">SUBMIT</button>
+    </form>
+  </body>
+</html>

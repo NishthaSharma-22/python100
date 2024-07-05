@@ -1,0 +1,40 @@
+body {
+  font-family: Verdana;
+  margin: 20px;
+  text-align: center;
+  background: linear-gradient(lightyellow, lightblue);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  color: #333;
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #cd4911;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #5d1515;
+}
+
+button:hover {
+  background-color: #e7ea1f;
+  color: black;
+}
+
+button:active {
+  background-color: #819b0b;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
